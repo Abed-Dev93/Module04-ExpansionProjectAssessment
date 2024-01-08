@@ -1,0 +1,79 @@
+.productCard {
+    width: 20%;
+    height: 10rem;
+    background-color: #333;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.1rem;
+    position: relative;
+}
+
+.productCardTitle {
+    width: 90%;
+    height: 65%;
+    margin: 0 auto;
+    margin-top: 0.3rem;
+}
+
+.productCardTitleText {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.productCardBody {
+    width: 85%;
+    height: 25%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.productCardCategory {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.productCardSubTitle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.productCardPrice {
+    font-size: 0.7rem;
+    font-weight: 400;
+}
+
+.button {
+    width: 15%;
+    height: 0.9rem;
+    background-color: #fa2a2a;
+    border: none;
+    border-radius: 0.2rem;
+    color: #fff;
+    font-size: 0.5rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.createIcon {
+    color: #fff;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: #333;
+    cursor: pointer;
+}
+
+.closeIcon {
+    position: absolute;
+    right: -0.3rem;
+    top: -0.3rem;
+    color: #fa2a2a;
+    cursor: pointer;
+}

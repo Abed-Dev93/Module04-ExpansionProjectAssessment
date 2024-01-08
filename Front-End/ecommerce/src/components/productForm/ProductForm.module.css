@@ -1,0 +1,98 @@
+.createProductContainer {
+    height: 100vh;
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2.2rem;
+}
+
+.createProductTitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.createProductForm {
+    width: 100%;
+    height: 80%;
+    background-color: #222;
+    color: #fff;
+    border-radius: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.formFloating, .formFloatingTextArea {
+    position: relative;
+    width: 40%;
+}
+
+.formFloating {
+    height: 1.6rem;
+}
+
+.formFloatingTextArea {
+    height: 7rem;
+}
+
+.firstInput {
+    margin-top: 2.5rem;
+}
+
+.formInput, .formInputTextArea {
+    width: 100%;
+    height: 100%;
+    background-color: #222;
+    border: 1px solid #fff;
+    border-radius: 0.8rem;
+    font-size: 0.7rem;
+    color: #fff;
+    padding-left: 0.5rem;
+}
+
+.formInputTextArea {
+    padding: 0.5rem;
+}
+
+.formInputLabel, .formInputTextAreaLabel {
+    position: absolute;
+    top: 50%;
+    left: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    background-color: #222;
+    transform: translateY(-50%);
+    padding: 0 0.25rem;
+    pointer-events: none;
+    transition: transform 0.2s ease, font-size 0.2 ease, color 0.2s ease;
+}
+
+.formInputTextAreaLabel {
+    top: 10%;
+    transform: translateY(-10%);
+}
+
+.formInput:focus + .formInputLabel, .formInput:not(:placeholder-shown) + .formInputLabel,
+.formInputTextArea:focus + .formInputTextAreaLabel, .formInputTextArea:not(:placeholder-shown) + .formInputTextAreaLabel {
+    transform: translateY(-120%) scale(0.75);
+    font-size: 0.75rem;
+    color: #d9d9d9;
+    font-weight: 300;
+}
+
+.formButton {
+    width: 20%;
+    height: 1.3rem;
+    background-color: #fa2a2a;
+    border: none;
+    border-radius: 0.2rem;
+    color: #fff;
+    font-size: 0.5rem;
+    font-weight: 700;
+    cursor: pointer;
+}
